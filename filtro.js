@@ -7,9 +7,8 @@ const productos = [
   {nombre: "Bota azul", tipo: "bota", color: "azul", img: "./bota-azul.jpg"},
   {nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "./zapato-rojo.jpg"}
 ]
-
-const li = document.getElementsByName("lista-de-productos")
-const $i = document.querySelector('.input');
+const li = document.getElementById("lista-de-productos");/* Cambie name por id */
+const $i = document.querySelector('input');
 
 for (let i = 0; i < productos.length; i++) {
   var d = document.createElement("div")
